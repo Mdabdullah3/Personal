@@ -1,0 +1,550 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", monospace;
+}
+/*---------------------
+   Header Area Style 
+----------------------- */
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo h1 {
+  margin-left: 150px;
+  padding: 18px;
+  font-size: 27px;
+  color: #f49560;
+}
+.navbar {
+  display: flex;
+  margin-right: 50px;
+}
+.navbar li {
+  padding: 10px 14px;
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #313030;
+  font-family: "Noto Sans Mono", monospace;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.4s linear;
+}
+.navbar li a:hover {
+  color: #f49560;
+}
+/*----------------------------
+    Top Banner Area Style 
+------------------------------ */
+.top-banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+.half1 {
+  flex: 1;
+  margin-left: 200px;
+}
+.half2 {
+  flex: 1;
+}
+.half2 img {
+  max-width: 73%;
+  height: auto;
+}
+.samll-text {
+  font-weight: 200;
+  color: #222222;
+  text-transform: uppercase;
+}
+.text-animation {
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+  color: transparent;
+}
+.text-animation:before {
+  content: "Abi Abdullah";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f49560;
+  animation: typing 3s linear infinite;
+}
+.text-title {
+  color: rgb(107, 105, 105);
+  font-size: 15px;
+  font-weight: 400;
+  width: 90%;
+}
+span {
+  color: #f49560;
+}
+.blue-btn {
+  padding: 10px 35px;
+  outline: none;
+  background: linear-gradient(45deg, #f49560, #fac961);
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+.blue-btn:hover {
+  box-shadow: 5px 10px 30px rgba(255, 243, 130, 0.5);
+  transition: all 0.5s ease-in 0.1s;
+  outline: none;
+}
+/*----------------------
+    About area Style 
+-----------------------*/
+
+.About-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.half-1 img {
+  width: 80%;
+  height: auto;
+  margin-left: 200px;
+}
+.half-2 {
+  margin-left: 200px;
+}
+/*-------------------------
+    Service Area Style
+--------------------------- */
+.service-section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.service-section p {
+  width: 45%;
+  margin: auto;
+  font-size: 13px;
+  color: rgb(107, 105, 105);
+}
+.service-area {
+  width: 80%;
+  margin: 0 auto;
+}
+.service-area i {
+  font-size: 35px;
+  color: grey;
+}
+.service-area h1 {
+  font-size: 25px;
+  color: #414141;
+}
+.service-area p {
+  font-size: 13px;
+  width: 80%;
+}
+.service-1 {
+  display: flex;
+  margin-top: 100px;
+}
+.service-2 {
+  display: flex;
+  margin-top: 50px;
+}
+
+/*---------------------------
+     Clients Section style
+----------------------------- */
+.Clients-section {
+  width: 100%;
+  height: 230px;
+  background: linear-gradient(35deg, #f49560, #fac961);
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.Clients-section div {
+  margin: auto;
+}
+.Clients-section h1,
+p {
+  text-align: center;
+  color: #fff;
+}
+.Clients-section h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.Clients-section p {
+  font-size: 14px;
+  margin-top: -40px;
+}
+/*-----------------------
+    Gallery Area Style 
+------------------------- */
+.gallery {
+  width: 100%;
+}
+.gallery-text {
+  text-align: center;
+}
+.gallery-text h6 {
+  color: gray;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: -20px;
+}
+.gallery-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #383838;
+}
+.gallery-content {
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.gallery-content div {
+  width: 340px;
+  height: 339px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+.gallery figure {
+  background: linear-gradient(55deg, #f49560, #fac961);
+  width: 340px;
+  height: 339px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px;
+}
+.gallery figure img:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.gallery-content h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #3a3737;
+}
+.gallery-content h5 {
+  font-size: 15px;
+  text-align: center;
+  color: #777373;
+  margin-top: -18px;
+}
+/*-------------------------
+     Pricing Table Style 
+-------------------------- */
+.Pricing {
+  width: 100%;
+  height: 700px;
+}
+.text-4 {
+  text-align: center;
+  padding: 2% 0;
+}
+.text-4 h1 {
+  font-size: 40px;
+  line-height: 0;
+  padding-top: 15px;
+}
+.text-4 h5 {
+  color: grey;
+  font-weight: 400;
+  font-size: 12px;
+}
+.card {
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.card-1 {
+  width: 320px;
+  height: 520px;
+  background-color: rgb(249, 249, 255);
+  text-align: center;
+  border: 1 px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.card-1 h1 {
+  font-size: 50px;
+  padding-top: 8px;
+}
+.card-1 input {
+  outline: none;
+  background: linear-gradient(35deg, #f49560, #fac961);
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 10px 60px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+}
+hr {
+  color: #fff;
+}
+.card-1 h5 {
+  font-size: 13px;
+  font-weight: 300;
+}
+.card-1:hover {
+  background-color: #f49560;
+  color: #fff;
+  transition: all 0.25s case-in;
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 232, 130, 0.5);
+  border-radius: 5px;
+}
+#active {
+  background-color: #f49560;
+  color: #fff;
+  transition: all 0.25s case-in;
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 232, 130, 0.5);
+  border-radius: 5px;
+}
+#active:hover {
+  width: 320px;
+  height: 520px;
+  background-color: rgb(249, 249, 255);
+  text-align: center;
+  border: 1 px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  color: #04091e;
+}
+.card-1:hover input {
+  color: #fff;
+  background-color: #fff;
+}
+/* footer area  */
+footer {
+  background: #04091e;
+  color: #fff;
+  width: 100%;
+  margin-top: 200px;
+}
+footer .foot {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.foot-1 h6 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  width: 100%;
+}
+.foot-1 {
+  width: 100%;
+  margin-left: 50px;
+}
+.foot-2 {
+  width: 100%;
+  padding-left: 100px;
+}
+.foot-2 h5 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+.foot-2 input {
+  font-size: 15px;
+  outline: none;
+  border: none;
+  padding: 10px 150px 10px 10px;
+}
+.foot-2 button {
+  font-size: 16px;
+  padding: 12px 25px;
+  background: linear-gradient(55deg, #f49560, #fac961);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+.foot-3 {
+  width: 100%;
+  padding-left: 130px;
+}
+.foot-3 h6 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.foot-3 i {
+  font-size: 15px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.foot i:hover {
+  color: hotpink;
+}
+
+/* Animation  */
+
+@keyframes typing {
+  0% {
+    content: "A|";
+  }
+  5% {
+    content: "Ab|";
+  }
+  10% {
+    content: "Abi|";
+  }
+  15% {
+    content: "Abi |";
+  }
+  20% {
+    content: "Abi A|";
+  }
+  25% {
+    content: "Abi Ab|";
+  }
+  30% {
+    content: "Abi Abd|";
+  }
+  35% {
+    content: "Abi Abdu";
+  }
+  40% {
+    content: "Abi Abdu|";
+  }
+  45% {
+    content: "Abi Abdull|";
+  }
+  50% {
+    content: "Abi Abdulla|";
+  }
+  55% {
+    content: "Abi Abdullah|";
+  }
+  60%,
+  80% {
+    content: "Abi Abdullah|";
+  }
+  83% {
+    content: "Abi Abdulla|";
+  }
+  85% {
+    content: "Abi Abdull|";
+  }
+  87% {
+    content: "Abi Abdul|";
+  }
+  90% {
+    content: "Abi Abdu";
+  }
+  92% {
+    content: "Abi Abd";
+  }
+  93% {
+    content: "Abi Ab";
+  }
+  94% {
+    content: "Abi A";
+  }
+  95% {
+    content: "Abi ";
+  }
+  96% {
+    content: "Abi";
+  }
+  97% {
+    content: "Ab";
+  }
+  98% {
+    content: "A";
+  }
+  99%,
+  100% {
+    content: "|";
+  }
+}
+/*-----------------
+    Moblie Device 
+------------------- */
+@media only screen and (max-width: 688px) {
+  header {
+    flex-direction: column;
+    position: relative;
+  }
+  .half2 img {
+    width: 90%;
+    margin-left: 30px;
+  }
+  .top-banner {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  .half1 {
+    margin-left: 40px;
+  }
+  .About-area {
+    flex-direction: column;
+  }
+  .half-1 img {
+    margin-left: 20px;
+  }
+  .half-2 {
+    margin-left: 40px;
+  }
+  .service-area div {
+    margin-bottom: 40px;
+  }
+  .service-1 {
+    flex-direction: column;
+  }
+  .service-2 {
+    flex-direction: column;
+  }
+  .Clients-section {
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .foot {
+    flex-direction: column;
+  }
+  .foot-1 {
+    margin-left: 0px;
+  }
+  .foot-2 {
+    padding-left: 0px;
+  }
+  .foot-3 {
+    padding-left: 0px;
+  }
+}
